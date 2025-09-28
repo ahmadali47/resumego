@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+:root {
+    --mainclr: #333;
+    --firclr: #333;
+    --secclr: #898989;
+
+    --designclr: #d9e7f0;
+}
+
+body {
+    width: 880px;
+    margin: 0 auto;
+
+    font-family: "Playwrite DE Grund", cursive;
+    /* font-family: "Exo", sans-serif; */
+    /* font-family: "Kumbh Sans", sans-serif; */
+    /* font-family: "Wix Madefor Text", sans-serif; */
+
+    /* font-family: "Kiwi Maru", serif; */
+
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: var(--mainclr);
+}
+
+.container {
+    width: 880px;
+
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+
+    display: flex;
+}
+
+.sec_left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 2rem;
+}
+
+.sec_right {
+
+    font-family: "Kiwi Maru", serif;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    background-color: var(--designclr);
+    padding: 2rem 2rem;
+}
+
+#pic {
+    margin: 0 4.5rem;
+
+    object-fit: cover;
+    height: 155px;
+    width: 155px;
+    border-radius: 100%;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.date {
+    color: var(--secclr);
+}
+
+
+.skills ul,
+.education ul,
+.experience ul,
+.languages ul,
+.customs ul,
+.achievements ul,
+.projects ul {
+    padding: 0;
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.languages p {
+    margin-top: .2rem;
+}
+
+.head {
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    padding: .1rem 0rem;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    /* line-height: 1.5; */
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #ffffff;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    margin: .5rem 0rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    padding: .2rem 0rem;
+}

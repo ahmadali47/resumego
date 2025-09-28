@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --mainclr: #333;
+    --firclr: #333;
+    --secclr: #898989;
+    
+    --designclr: #f6f0e4;
+}
+
+body {
+    width: 880px;
+    margin: 0 auto;
+
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: var(--mainclr);
+}
+
+.container {
+    width: 880px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.top {
+    background-color: var(--designclr);
+}
+
+.header {
+    display: flex;
+    padding: 2rem 4rem;
+}
+
+.profile {
+    font-size: 18px;
+    padding: 0rem 4rem;
+
+}
+
+.skills {
+    padding: 1.6rem 4rem;
+}
+
+
+.imgbox {
+    display: inline-block;
+}
+
+.header img {
+    object-fit: cover;
+    display: inline;
+    height: 110px;
+    width: 110px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.midbot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mid {
+
+    display: flex;
+
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.mid1 {
+    float: left;
+    display: inline;
+    height: 60px;
+}
+
+.mid2 {
+    display: inline;
+    height: 60px;
+    float: right;
+}
+
+#phone {
+    display: inline;
+    position: relative;
+    float: right;
+    right: 0px;
+}
+
+#email,
+#phone,
+#address {
+    padding-top: 8px;
+}
+
+.skills ul {
+    margin: 0;
+    padding: 0;
+}
+
+#skillcontainer {
+    padding: .5rem 0rem;
+}
+
+#skillcontainer li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin: 0;
+    padding: .2rem .8rem;
+}
+
+#langcontainer li {
+    list-style: disc;
+}
+
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.date {
+    color: var(--secclr);
+}
+
+.main-content {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec_left {
+    border-right: 2px dashed var(--designclr);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 1rem;
+}
+
+.sec_right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.skills ul,
+.education ul,
+.experience ul,
+.achievements ul,
+.projects ul,
+.languages ul,
+.customs ul {
+    padding: 0;
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.languages p {
+    margin-top: .2rem;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}

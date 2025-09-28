@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <style>
+        :root {
+            --orng: #ec644b;
+            --del: #ff4141;
+            --shadow: #0000002e;
+            --back: #ffffff;
+
+            background-color: var(--back);
+        }
+
+        body {
+            font-size: 16px;
+            background-color: var(--back);
+        }
+
+        .container {
+            text-align: center;
+            background-color: var(--back);
+            padding: 1rem 0rem;
+        }
+
+        .container h3 {
+            display: inline-block;
+            margin: 0;
+            border-radius: 10px;
+            color: var(--orng);
+            padding: .5rem .5rem;
+        }
+
+        .templates {
+            display: flex;
+            margin: 0rem auto;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .templates ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .templates ul li {
+            margin: 1rem 1rem;
+            cursor: pointer;
+        }
+
+        .templates ul li div {
+            overflow: hidden;
+            border-radius: 5px;
+            height: 450px;
+
+            box-shadow: 2px 1px 5px 1px var(--shadow);
+        }
+
+
+        .templates ul li img {
+            transition: transform 0.3s ease;
+
+            width: 318px;
+            height: 450px;
+        }
+
+        .templates ul li img:hover {
+            transform: scale(1.01);
+            transition-duration: 0.2s;
+
+
+        }
+
+        .templates ul li p {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: .2rem .2rem;
+            padding: 0;
+        }
+
+
+
+
+        @media (max-width: 1758px) {
+            .templates {
+                width: 1407px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .templates {
+                width: 1057px;
+            }
+        }
+
+        @media (max-width: 1095px) {
+            .templates {
+                width: 705px;
+            }
+        }
+
+
+        @media (max-width: 735px) {
+            .templates ul li img {
+                width: 238px;
+                height: 337px;
+            }
+
+            .templates ul li div {
+                height: 337px;
+            }
+
+            .templates {
+                width: 545px;
+            }
+        }
+
+
+        @media (max-width: 575px) {
+            .templates {
+                width: 352px;
+            }
+
+            .container h3 {
+                font-size: 14px;
+            }
+
+            .templates ul li img {
+                width: 318px;
+                height: 450px;
+            }
+
+            .templates ul li div {
+                height: 450px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .templates {
+                width: 320px;
+            }
+
+            .templates ul li img {
+                width: 286px;
+                height: 405px;
+            }
+
+            .templates ul li div {
+                height: 405px;
+            }
+        }
+
+        @media (max-width: 345px) {
+            .templates {
+                width: 290px;
+            }
+
+            .templates ul li img {
+                width: 257px;
+                height: 364px;
+            }
+
+            .templates ul li div {
+                height: 364px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="fixed" class="fixed">
+        <ul class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="pics/logo.png" alt=""></a>
+            </div>
+
+            <div class="links leftlinks">
+                <!-- <a href="index.html">
+                    <li>Home</li>
+                </a> -->
+                <a href="template.html">
+                    <li>Templates</li>
+                </a>
+                <a href="form_page.html">
+                    <li>My Resume</li>
+                </a>
+            </div>
+
+            <div class="links rightlinks">
+                <a href="">
+                    <li>Sign In</li>
+                </a>
+            </div>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="templates">
+            <ul>
+
+                <li>
+                    <div id="t5"><img src="pics/design3.jpg" alt=""></div>
+                    <p>Playwrite</p>
+                </li>
+
+                <li>
+                    <div id="t4"><img src="pics/design2.jpg" alt=""></div>
+                    <p>Cabin</p>
+                </li>
+
+                <li>
+                    <div id="t6"><img src="pics/simple3.jpg" alt=""></div>
+                    <p>Carnival</p>
+                </li>
+                
+                <li>
+                    <div id="t2"><img src="pics/simple2.jpg" alt=""></div>
+                    <p>Coffee</p>
+                </li>
+
+                <li>
+                    <div id="t3"><img src="pics/design1.jpg" alt=""></div>
+                    <p>Monospace</p>
+                </li>
+
+                <li>
+                    <div id="t1"><img src="pics/simple1.jpg" alt=""></div>
+                    <p>Retro</p>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+
+        document.getElementById('t1').addEventListener('click', function (event) {
+            // event.preventDefault();
+            const data = 'templates/retro.html';
+            localStorage.setItem('template', JSON.stringify(data));
+            window.location.href = 'form_page.html';
+        });
+
+        document.getElementById('t2').addEventListener('click', function (event) {
+            // event.preventDefault();
+            const data = 'templates/coffee.html';
+            localStorage.setItem('template', JSON.stringify(data));
+            window.location.href = 'form_page.html';
+        });
+
+        document.getElementById('t3').addEventListener('click', function (event) {
+            // event.preventDefault();
+            const data = 'templates/monospace.html';
+            localStorage.setItem('template', JSON.stringify(data));
+            window.location.href = 'form_page.html';
+        });
+
+        document.getElementById('t4').addEventListener('click', function (event) {
+            // event.preventDefault();
+            const data = 'templates/cabin.html';
+            localStorage.setItem('template', JSON.stringify(data));
+            window.location.href = 'form_page.html';
+        });
+
+        document.getElementById('t5').addEventListener('click', function (event) {
+            // event.preventDefault();
+            const data = 'templates/playwrite.html';
+            localStorage.setItem('template', JSON.stringify(data));
+            window.location.href = 'form_page.html';
+        });
+
+        document.getElementById('t6').addEventListener('click', function (event) {
+            // event.preventDefault();
+            const data = 'templates/carnival.html';
+            localStorage.setItem('template', JSON.stringify(data));
+            window.location.href = 'form_page.html';
+        });
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="navbarscript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @media print {
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                /* background-size: cover; */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+
+    <style>
+        :root {
+            --mainclr: #333;
+
+            --designclr: #888484;
+            --firclr: #333;
+
+            --secclr: #898989;
+        }
+
+        body {
+            width: 880px;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            color: var(--mainclr);
+        }
+
+        .container {
+            width: 880px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 0;
+        }
+
+        #about {
+            padding: .2rem 0rem;
+        }
+
+        .header {
+            padding: .5rem 4rem;
+            padding-top: 2rem;
+        }
+
+        .content {
+            padding: 0rem 4rem;
+            padding-bottom: 2rem;
+        }
+
+        .header div {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--firclr);
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 2.8rem;
+        }
+
+        .header span {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header p {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 1.5em;
+            margin-top: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: var(--firclr);
+        }
+
+        #contactdetail {
+            font-size: 1rem;
+        }
+
+        .date {
+            color: var(--secclr);
+        }
+
+        .languages p {
+            margin-top: .2rem;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            line-height: .7;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h4 {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+        }
+
+        #about,
+        #expcontain,
+        #sec1contain,
+        #sec2contain {
+            border-top: 2px solid black;
+        }
+
+        #edcontain {
+            border-top: 2px solid black;
+            padding-top: .3rem;
+        }
+
+        #skillcontainer,
+        #langcontainer,
+        #customcontainer {
+            border-top: 2px solid black;
+            padding: .2rem 0rem;
+        }
+
+        .skills ul,
+        .education ul,
+        .experience ul,
+        .achievements ul,
+        .projects ul,
+        .languages ul,
+        .customs ul {
+            padding: 0;
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container" class="container">
+
+        <div class="header">
+            <div>
+                <h1 id="fname" name="fname"><span id="lname" name="lname"></span></h1>
+                <p id="title" name="title"></p>
+
+                <div id="contact" class="contact"></div>
+                <p name="contactdetail" id="contactdetail"></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="profile" class="profile">
+                <h2>Profile</h2>
+                <p id="about" name="about"></p>
+            </div>
+
+            <div id="experience" class="experience">
+                <h2>Experience</h2>
+                <div id="expcontain"></div>
+            </div>
+
+            <div id="skills" class="skills">
+                <h2>Skills</h2>
+                <ul id="skillcontainer"></ul>
+            </div>
+
+            <div id="education" class="education">
+                <h2>Education</h2>
+                <div id="edcontain"></div>
+            </div>
+
+            <div id="languages" class="languages">
+                <h2>Languages</h2>
+                <ul id="langcontainer"></ul>
+            </div>
+
+            <div id="achievements" class="achievements">
+                <h2 id="sec1">Achievements</h2>
+                <div id="sec1contain"></div>
+            </div>
+
+            <div id="customs" class="customs">
+                <h2 id="custom"></h2>
+                <ul id="customcontainer"></ul>
+            </div>
+
+            <div id="projects" class="projects">
+                <h2 id="sec2">Projects</h2>
+                <div id="sec2contain"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="retroscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+
+</html>

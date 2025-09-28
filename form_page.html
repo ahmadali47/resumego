@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Details</title>
+    <link rel="stylesheet" href="form_page_style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="colorstyle.css">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <style>
+        @media print {
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                /* background-size: cover; */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="fixed" class="fixed">
+        <ul class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="pics/logo.png" alt=""></a>
+            </div>
+
+            <div class="links leftlinks">
+                <!-- <a href="index.html">
+                    <li>Home</li>
+                </a> -->
+                <a href="template.html">
+                    <li>Templates</li>
+                </a>
+                <a href="form_page.html">
+                    <li>My Resume</li>
+                </a>
+            </div>
+
+            <div class="links rightlinks">
+                <a href="">
+                    <li>Sign In</li>
+                </a>
+            </div>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div id="left" class="left">
+
+            <form id="form" class="form" action="">
+
+                <div class="border">
+                    <div>
+                        <div class="onefield">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div class="onefield">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="onefield">
+                            <label for="title">Profession /Title</label><br>
+                            <input type="text" id="title" name="title" placeholder="e.g. Software Developer">
+                        </div>
+                        <div id="picture" class="onefield">
+                            <label for="imageInput"> Picture</label><br>
+                            <input type="file" id="imageInput" accept="image/*">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain border">
+                    <h4>Details</h4><br>
+                    <div class="onefield">
+                        <label for="address">Address</label><br>
+                        <input id="address" name="address" type="text">
+                    </div>
+                    <div class="onefield">
+                        <label for="contact">Contact</label><br>
+                        <input id="contact" name="contact" type="text">
+                    </div>
+                    <div class="onefield">
+                        <label for="email">Email</label><br>
+                        <input id="email" name="email" type="text">
+                    </div>
+
+                    <div>
+                        <label for="about">About</label><br>
+                        <textarea id="about" name="about" class="about-details"
+                            placeholder="Write about yourself ..."></textarea>
+                    </div>
+                </div>
+
+                <h4 class="note"> Note :</h4>
+                <p class="notep"> If add a section but don't write anything in it that element is still going to show as
+                    blank space in your resume so better remove it.</p>
+
+                <div class="contain border">
+                    <h4>Skills</h4>
+                    <div>
+                        <p>Add Skill<button id="skadd" name="skadd" class="add" type="submit">+</button> </p>
+                        <div id="skills" name="skills"></div>
+                    </div>
+                </div>
+
+
+                <div class="contain border">
+                    <h4>Education</h4>
+                    <div>
+                        <p>Add Education <button id="edadd" name="edadd" class="add" type="submit">+</button> </p>
+                        <div id="education-container" name="education-container"></div>
+                    </div>
+                </div>
+
+
+                <div class="contain border">
+                    <h4>Experience</h4>
+                    <div>
+                        <p>Add Experience <button id="expadd" name="expadd" class="add" type="submit">+</button> </p>
+                        <div id="experience-container" name="experience-container"></div>
+                    </div>
+                </div>
+
+
+                <div class="contain border">
+                    <h4 id="lang">Languages</h4>
+                    <div>
+                        <p>Add Language<button id="langadd" name="langadd" class="add" type="submit">+</button> </p>
+                        <div id="lang-container" name="lang-container"></div>
+                    </div>
+                </div>
+
+
+                <div class="contain border">
+                    <h4 class="border" id="custom" style="cursor:pointer" contenteditable="true">Custom field ✎</h4>
+                    <div>
+                        <p>Add Field<button id="customadd" name="customadd" class="add" type="submit">+</button> </p>
+                        <div id="custom-container" name="custom-container"></div>
+                    </div>
+                </div>
+
+                <div class="contain border">
+                    <h4 class="border" id="sec1" style="cursor:pointer" contenteditable="true">Custom Section ✎</h4>
+                    <div>
+                        <p>Add Section <button id="sec1add" name="sec1add" class="add" type="submit">+</button> </p>
+                        <div id="sec1-container" name="sec1-container"></div>
+                    </div>
+                </div>
+
+                <div class="contain border">
+                    <h4 class="border" id="sec2" style="cursor:pointer" contenteditable="true">Custom Section ✎</h4>
+                    <div>
+                        <p>Add Section <button id="sec2add" name="sec2add" class="add" type="submit">+</button> </p>
+                        <div id="sec2-container" name="sec2-container"></div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div id="pannel-box" class="pannel-box">
+
+            <div id="pannel" class="pannel">
+
+                <div class="iframe-container">
+                    <iframe id="cvIframe" class="scaled-iframe"></iframe>
+                </div>
+
+                <div id="clrsection" class="clrsection">
+                    <div class="color">
+                        <input id="cl1" type="radio">
+                        <input id="cl2" type="radio">
+                        <input id="cl3" type="radio">
+                        <input id="cl4" type="radio">
+                        <input id="cl5" type="radio">
+                    </div>
+                    <input id="clrmain" class="clrpalet" type="color">
+                </div>
+
+
+                <div class="pannel-buttons">
+                    <button id="refresh" class="refresh" type="submit" onclick="refresh()">Refresh ⟳</button>
+                    <button id="download" class="download" type="submit" onclick="download()">Download</button>
+                </div>
+
+
+            </div>
+
+            <div id="pannel-b" class="pannel-b">
+                <h4>To Start Building ...</h4>
+                <a href="template.html"><button>+ Select Template</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+    <script>
+
+        function download() {
+
+            alert("Select 'A4' Size For Exact Resume ...");
+
+            const iframe = document.getElementById('cvIframe');
+            const iframeWindow = iframe.contentWindow;
+
+            if (!iframeWindow) {
+                alert("Unable to access the content in the iframe.");
+                return;
+            }
+
+            // Check if the iframe is fully loaded
+            iframe.onload = function () {
+                iframeWindow.focus();
+                iframeWindow.print();
+            };
+
+            // In case the iframe was already loaded
+            if (iframeWindow.document.readyState === 'complete') {
+                iframeWindow.focus();
+                iframeWindow.print();
+            }
+        }
+
+    </script>
+
+    <script src="form_page_script.js"></script>
+    <script src="changeable.js"></script>
+    <script src="navbarscript.js"></script>
+
+</body>
+
+</html>

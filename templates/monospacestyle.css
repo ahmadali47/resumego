@@ -1,0 +1,141 @@
+:root {
+    --mainclr: #333;
+    --firclr: #333;
+    --secclr: #898989;
+
+    --designclr: #888484;
+}
+
+body {
+    width: 880px;
+    margin: 0 auto;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: var(--mainclr);
+}
+
+.container {
+    width: 880px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0;
+    padding-top: 1.6rem;
+}
+
+.header {
+    background-color: var(--designclr);
+    height: 144px;
+}
+
+.header div {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 1.55rem;
+    margin-left: 3rem;
+}
+
+.header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--firclr);
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 2.8rem;
+}
+
+.header span {
+    font-weight: bold;
+}
+
+.header p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--firclr);
+}
+
+.header img {
+    object-fit: cover;
+    float: right;
+    height: 155px;
+    width: 155px;
+    border-radius: 100%;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.date {
+    color: var(--secclr);
+}
+
+.main-content {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+.sec_left {
+    border-right: 2px dashed var(--designclr);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 1rem;
+}
+
+.sec_right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.skills ul,
+.education ul,
+.experience ul,
+.achievements ul,
+.projects ul,
+.languages ul,
+.customs ul {
+    padding: 0;
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.languages p {
+    margin-top: .2rem;
+}
+
+ 
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}

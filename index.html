@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+        :root {
+            --clr: #dadada;
+            --clr2: #a5a5a5;
+            --del: #ff4141;
+            --orng: #ec644b;
+            --hvrorng: #f24f33;
+
+            --maincolor: #fffdd0;
+            --greytrans: #dedede5d;
+            --fontstyle: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            background-color: #ffff;
+        }
+
+
+        .container {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: 4fr 5fr;
+        }
+
+        .sec-left {
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .leftbox {
+            margin: 1rem auto;
+            width: 456px;
+        }
+
+        .buttons {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            padding: 2px 5px;
+            margin: 2rem 0rem;
+        }
+
+        .buttons button {
+            display: inline;
+            border-radius: 10px;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+
+        .buttons a {
+            text-decoration: none;
+        }
+
+        #b1 {
+            border: none;
+            padding: 11px 11px;
+            background: linear-gradient(to right, var(--orng), var(--del));
+            color: #ffffff;
+            font-size: .9rem;
+        }
+
+        #b1:hover {
+            background-color: var(--hvrorng);
+            transition-duration: 0.2s;
+        }
+
+        #b2 {
+            border: 1px solid var(--orng);
+            color: var(--orng);
+            background-color: #ffffff00;
+            font-size: .9rem;
+        }
+
+        #b2:hover {
+            background-color: var(--clr);
+            transition-duration: 0.2s;
+        }
+
+        .sec-right {
+            padding: 0rem 1rem;
+        }
+
+        .img-container {
+            text-align: center;
+        }
+
+        .img-container img {
+            width: 448px;
+            height: 432px;
+            margin: .5rem auto;
+        }
+
+
+        @media (max-width: 1050px) {
+
+            .container {
+                margin-top: 0rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 18px;
+            }
+
+            .leftbox {
+                font-size: 18px;
+                margin: 1rem auto;
+                width: 512px;
+            }
+
+            .img-container img {
+                width: 537px;
+                height: 518px;
+            }
+
+            .sec-left {
+                margin-top: 2rem;
+            }
+
+        }
+
+        @media (max-width: 750px) {
+
+            .container {
+                margin-top: 0rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 16px;
+            }
+
+            .leftbox {
+                font-size: 16px;
+                margin: 1rem auto;
+                width: 456px;
+            }
+
+            .img-container img {
+                width: 448px;
+                height: 432px;
+            }
+
+            .sec-left {
+                margin-top: 1rem;
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            .container {
+                margin-top: 0rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+            }
+
+            .leftbox {
+                font-size: 14px;
+                margin: 1rem auto;
+                width: 398px;
+            }
+
+            .img-container img {
+                width: 358px;
+                height: 345px;
+            }
+
+            .sec-left {
+                padding: 1rem 1rem;
+                margin-top: 1rem;
+            }
+
+        }
+
+        @media (max-width: 475px) {
+
+            .container {
+                margin-top: 0rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+            }
+
+            .leftbox {
+                font-size: 13px;
+                margin: 1rem auto;
+                width: 369px;
+            }
+
+            .img-container img {
+                width: 322px;
+                height: 310px;
+            }
+
+            .sec-left {
+                padding: 1rem 1rem;
+                margin-top: .5rem;
+            }
+
+        }
+
+        @media (max-width: 425px) {
+
+            .container {
+                margin-top: 0rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+            }
+
+            .leftbox {
+                font-size: 12px;
+                margin: 1rem auto;
+                width: 342px;
+            }
+
+            .img-container img {
+                width: 289px;
+                height: 279px;
+            }
+
+            .sec-left {
+                padding: 1rem 1rem;
+                margin-top: .5rem;
+            }
+
+        }
+
+        @media (max-width: 401px) {
+
+
+            .container {
+                margin-top: 0rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 10px;
+            }
+
+            .leftbox {
+                font-size: 10px;
+                margin: 1rem auto;
+                width: 285px;
+            }
+
+            .leftbox p {
+                font-size: 12px;
+            }
+
+            .img-container img {
+                width: 260px;
+                height: 251px;
+            }
+
+            .sec-left {
+                padding: 1rem 1rem;
+                margin-top: .5rem;
+            }
+
+            .buttons {
+                display: flex;
+                /* flex-direction: column; */
+                padding: 2px 5px;
+                margin-top: 2rem;
+                margin-bottom: 0rem;
+            }
+            .buttons button {
+                padding: 8px 8px;
+            }
+            #b1 {
+                font-size: 12px;
+            }
+            #b2 {
+                font-size: 12px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="fixed" class="fixed">
+        <ul class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="pics/logo.png" alt=""></a>
+            </div>
+
+            <div class="links leftlinks">
+                <!-- <a href="index.html">
+                    <li>Home</li>
+                </a> -->
+                <a href="template.html">
+                    <li>Templates</li>
+                </a>
+                <a href="form_page.html">
+                    <li>My Resume</li>
+                </a>
+            </div>
+
+            <div class="links rightlinks">
+                <a href="">
+                    <li>Sign In</li>
+                </a>
+            </div>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="sec-left">
+            <div class="leftbox">
+                <div class="content">
+                    <h1>Create and Download Professional Resume for Free</h1>
+                    <p>Create your resume easily with our free builder and professional templates.</p>
+                </div>
+                <div class="buttons">
+                    <a href="form_page.html"> <button id="b1">Go to My Resume</button> </a>
+                    <a href="template.html"> <button id="b2">Create New Resume</button> </a>
+                </div>
+            </div>
+        </div>
+        <div class="sec-right">
+            <div class="img-container">
+                <div class="contain">
+                    <img id="img1" class="cover" src="pics/cover.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="navbarscript.js"></script>
+
+</body>
+
+</html>
