@@ -24,7 +24,6 @@ Live Demo: https://resumego.netlify.app/
 |---|---|
 | Frontend | HTML, CSS, JavaScript|
 | Styling | CSS / SCSS / Tailwind / custom CSS |
-| PDF Generation |
 | Hosting / Deployment | Netlify (for the live site) |
 | Version Control | Git / GitHub |
 
@@ -51,17 +50,15 @@ Preview the output in real time
 
 When done, click “Download” to get a PDF version
 
-🧪 Tests & Quality Assurance
+---
 
-(If you have tests, linting, or CI/CD, describe here)
-
-Run npm test or yarn test
-
-Use ESLint / Prettier for style consistency
+## 🧪 Tests & Quality Assurance
 
 Use GitHub Actions or other CI to automate builds & checks
 
-🧠 Future Enhancements & Roadmap
+---
+
+## 🧠 Future Enhancements & Roadmap
 
 Here are some ideas you might want to add later:
 
@@ -81,7 +78,9 @@ Analytics / metrics
 
 Multi-format export (DOCX, HTML, etc.)
 
-👥 Contributing
+---
+
+## 👥 Contributing
 
 Contributions are welcome! If you’d like to:
 
@@ -97,12 +96,17 @@ Open a Pull Request describing what you did
 
 Please make sure your code follows the existing style guidelines and that your changes are tested.
 
-📝 License
+---
 
-This project is licensed under the MIT License (or whatever license you choose). See LICENSE file for details.
+## 📝 License
 
-🙋‍♂️ Author & Contact
+This project is licensed under the MIT License. 
+See LICENSE file for details.
 
-Your Name — your email / website / social
+---
+
+## 🙋‍♂️ Author & Contact
+
+Ahmad Ali — ahmad.aa47ali@gmail.com / https://ahmadali47.netlify.app 
 
 Feel free to reach out for feedback, collaboration, or questions.
