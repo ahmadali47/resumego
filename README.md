@@ -32,15 +32,14 @@ Live Demo: https://resumego.netlify.app/
 
 ## 🛠️ Installation & Setup (for local development)
 
+ Clone the repository  
 
-** Clone the repository  
-   ```bash
-   git clone https://github.com/yourusername/resumego.git
+   git clone https://github.com/ahmadali47/resumego
    cd resumego
 
 ---
 
-##🚀 Usage
+## 🚀 Usage
 
 Click “Create New Resume” to start from a blank template
 
